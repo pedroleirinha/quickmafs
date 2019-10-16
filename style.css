@@ -1,0 +1,448 @@
+.sidenav {
+    height: 100%;
+    width: 0;
+    position: fixed;
+    z-index: 1;
+    top: 0;
+    left: 0;
+    background-color: #111;
+    overflow-x: hidden;
+    transition: 0.5s;
+    padding-top: 60px;
+}
+
+#playerName{
+    font-size: 2em;
+    margin: 0 auto;
+    margin-top: 4%;
+    color: white;
+    box-shadow: 0 0 10px #fff;
+    background: transparent;
+    font-family: 'Joti One', cursive;
+    text-align: center;
+    display: none;
+}
+
+.sidenav a{
+    text-decoration: none;
+    text-align: center;
+    color: white;
+}
+
+.sidenav a#closeMenu{
+    transition: 0.3s;
+    padding: 8px 8px 8px 32px;
+    text-decoration: none;
+    font-size: 25px;
+    color: #818181;
+    display: block;
+}
+
+.sidenav a.closebtn {
+    position: absolute;
+    top: 0;
+    right: 25px;
+    font-size: 36px;
+    margin-left: 50px;
+}
+
+#scoreTile ul li {
+    text-align: center;
+    cursor: pointer;
+    list-style-type: none;
+    margin: 5% auto;
+}
+
+#scoreTile table td {
+    width: 33%;
+    padding: 10px;
+}
+
+.greenAnwser {
+    font-size: 33px;
+    color: green;
+}
+
+.redAnwser {
+    font-size: 33px;
+    color: red;
+}
+
+table.display{
+    color: white;
+    font-family: 'Joti One', cursive;
+    font-size: 2em;
+    text-align: center;
+    cursor: pointer;
+    width: 80%;
+    margin: 5% auto;
+}
+#historyDetail h1{
+    color: white;
+    text-align: center;
+}
+
+#historyDetail h1 span.subtitle{
+    font-size: 1em;
+}
+
+#historyDetail table td{
+    padding: 2%;
+    width: 33%;
+}
+
+#scoreTitle{
+    display: flex;
+}
+
+table.display tr {
+    box-shadow: inset 0 -5px 4px -3px #6A6FEF;
+}
+
+h1.subtitle{
+    margin: 2% auto;
+    margin-top: 3%;
+    border-radius: 5px;
+    cursor: pointer;
+    width: 80%;
+}
+
+#scoreTitle>h1.subtitle{
+    box-shadow: 0 0 30px #FFCCCC;
+    width: 30%;
+}
+
+.button:hover {
+    box-shadow: 0 0 30px #6A6FEF;
+}
+
+#menu span {
+    font-size: 1.9em;
+    cursor: pointer;
+    padding: 5px;
+    margin-left: 10px;
+}
+
+#menu nav h1 {
+    vertical-align: top;
+}
+
+nav {
+    width: 25%;
+    display: block;
+    overflow: auto;
+    float: right;
+    box-shadow: 1px 0 white, 0 0px 4px -3px white;
+}
+
+#menu ul li{
+    cursor: pointer;
+    list-style-type: none;
+    text-align: center;
+    margin: 0 auto;
+    color: white;
+    padding: 10px;
+    font-family: 'Joti One', cursive;
+    font-size: 1.5em;
+}
+
+#menu ul li:hover {
+    cursor: pointer;
+    color: #CCCCFF;
+    transform: scale(1.3);
+    transition: all 150ms ease-in;
+}
+
+body {
+    background-color: #202020;
+    width: 100%;
+    height: 100%;
+    display: flex;
+}
+
+.title {
+    font-size: 6em;
+    font-family: 'Risque', cursive, Arial;
+    margin: 10px auto;
+    text-shadow: 5px 3px #808080;
+    color: #fff;
+    cursor: pointer;
+}
+
+#gametitle {
+    display: flex;
+}
+
+.subtitle {
+    font-size: 3em;
+    text-align: center;
+    margin-bottom: 10%;
+    font-family: 'Joti One', cursive;
+    color: #9999FF;
+}
+
+#infoTable {
+    font-family: 'Source Sans Pro', sans-serif;
+    color: #fff;
+    font-size: 2em;
+}
+
+.questionNumber {
+    padding: 10px;
+    font-family: 'Bungee', cursive, Arial;
+    color: #99CCFF;
+    margin: 0 auto;
+    cursor: pointer;
+    font-size: 6em;
+}
+
+#questionTile {
+    width: 80%;
+    margin: 5% auto;
+    display: flex;
+    box-shadow: 0 0 30px #FFCCCC;
+    border-radius: 20px;
+}
+
+#anwserTile {
+    width: 80%;
+    margin: 5% auto;
+    display: flex;
+}
+
+.anwserNumber:hover {
+    transform: scale(1.1);
+    cursor: pointer;
+    transition: all 170ms ease-in;
+}
+
+.rightAnwser {
+    box-shadow: 0 0 30px #00FF80;
+}
+
+.wrongAnwser {
+    box-shadow: 0 0 30px #EB3B3B;
+}
+
+.undefinedAnwser {
+    box-shadow: 0 0 30px #6A6FEF;
+}
+
+.anwserNumber {
+    display: flex;
+    align-items: center;
+    width: 20%;
+    height: 20%;
+    margin: 0 auto;
+    text-align: center;
+    cursor: pointer;
+    border-radius: 10px;
+}
+
+span {
+    font-family: 'Bungee', cursive, Arial;
+    font-size: 2em;
+    color: #ccc;
+    margin: 0 auto;
+}
+
+span#streak, span#dificulty, span#score {
+    font-family: 'Bungee', cursive, Arial;
+    font-size: 1em;
+    color: #ccc;
+    margin: 0 auto;
+}
+
+#clock {
+    font-family: 'Bungee', cursive, Arial;
+    font-size: 3em;
+    text-align: center;
+    color: #fff;
+}
+
+td {
+    width: 50%;
+}
+.displayedQuestion{
+    color: white;
+    font-family: 'Bungee', cursive, Arial;
+    text-align: center;
+    box-shadow: 0 0 15px #6A6FEF;
+    margin: 10%;
+    cursor: pointer;
+}
+
+.rightPanel{
+    overflow-y: auto;
+    position: fixed;
+    left: 75%;
+    top: 0;
+    bottom: 0;
+    width: 25%;
+    box-shadow: -1px 0 white, 0 0px 4px -3px white;
+}
+
+.leftPanel{
+    width: 75%;
+    height: 100%;
+}
+
+
+/*   Media Queries */
+
+@media screen and (max-width: 1000px) {
+
+    .title {
+        font-size: 4em;
+        text-align: center;
+    }
+
+    #infoTable{
+        font-size: 1.5em;
+    }
+
+    .leftPanel {
+        width: 50%;
+        height: 100%;
+    }
+
+    .rightPanel{
+        width: 30%;
+        left: 70%;
+        height: 100%;
+    }
+
+    .subtitle{
+        font-size: 2em;
+    }
+
+    .Clock{
+        font-size: 1.3em;
+    }
+
+    .questionNumber{
+        font-size: 3em;
+    }
+
+    span{
+        font-size: 1.5em;
+    }
+}
+
+@media screen and (max-width: 700px) {
+
+    .title {
+        font-size: 2.8em;
+        text-align: center;
+    }
+
+    .clock{
+        font-size: 2.5em;
+    }
+
+    #infoTable{
+        font-size: 1.2em;
+    }
+
+    span{
+        font-size: 1em;
+    }
+}
+
+@media screen and (max-width: 570px) {
+
+    table.display{
+        font-size: 0.5em;
+        width: 100%;
+    }
+
+    h1.subtitle.newgame, h1.subtitle.save{
+        padding: 10px;
+        font-size: 0.9em;
+    }
+
+    .redAnwser, .greenAnwser
+    {
+        font-size: 2.4em;
+    }
+
+    .anwserNumber{
+        margin-top: 5%;
+        height: 10%;
+    }
+
+    .questionNumber {
+        font-size: 2em;
+    }
+
+    #infoTable, #historyDetail h1{
+        font-size: 1em;
+    }
+
+    .subtitle , #historyDetail h1 span.subtitle{
+        font-size: 1.2em;
+    }
+    #clock{
+        font-size: 1.4em;
+    }
+
+    .leftPanel{
+        width: 75%;
+    }
+
+    #playerName{
+        font-size: 1em;
+        box-shadow: 0 0 1px #fff;
+        margin-top: 5%;
+    }
+
+    #scoreTile, #historyDetail{
+        overflow-y: auto;
+        left: 20%;
+        height: 58%;
+        position: absolute;
+    }
+
+    #historyDetail{
+     left: 14%;
+    }
+
+    #historySimpleView{
+        overflow-y: auto;
+        left: 0%;
+        height: 48%;
+        position: absolute;
+    }
+
+    .rightPanel{
+        width: 100%;
+        left: 0%;
+        top: 60%;
+        box-shadow: -1px 0 white, 0 0px 10px -3px white;
+    }
+
+    #topDiv{
+        width: 50%;
+    }
+
+    #bottomDiv{
+        width: 50%;
+    }
+
+    #info div.subtitle{
+        margin-bottom: 0px;
+        margin-top: 10px;
+    }
+    #menu span {
+        font-size: 1.3em;
+    }
+    #anwserTile, #questionTile{
+        width: 100%;
+        padding-top: 5%;
+    }
+
+    #info{
+        display: flex;
+    }
+
+}

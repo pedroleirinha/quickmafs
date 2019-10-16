@@ -1,0 +1,47 @@
+<!DOCTYPE html>
+<html>
+    <head>
+        <meta name="viewport" content="width=device-width, initial-scale=1.0">
+        <meta charset="UTF-8">
+        <!-- CSS Styles -->
+        <script src="https://ajax.googleapis.com/ajax/libs/jquery/1.8.3/jquery.min.js"></script>
+
+        <link href="https://fonts.googleapis.com/css?family=Risque" rel="stylesheet">
+        <link href="https://fonts.googleapis.com/css?family=Joti+One" rel="stylesheet">
+        <link href="https://fonts.googleapis.com/css?family=Bungee" rel="stylesheet">
+        <link href="https://fonts.googleapis.com/css?family=Source+Sans+Pro" rel="stylesheet">
+
+        <link rel="stylesheet" href="https://cdnjs.cloudflare.com/ajax/libs/font-awesome/4.7.0/css/font-awesome.min.css">
+
+
+        <link rel="stylesheet" type="text/css" href="style.css">
+
+        <script src="historyCode.js"></script>
+
+        <script>
+
+            $(function() {
+                let ui = historyUI("highscores");
+            });
+        </script>
+    </head>
+    <body>
+
+        <div id="menu">
+            <span>&#9776;</span>
+            <nav id="sideMenu" class="sidenav">
+                <h1 class='subtitle'>QuickMath</h1>
+                <ul>
+                    <li class='newgame closebtn'><a href="quickmath.html">New Game</a></li>
+                    <li class='history closebtn'><a href="history.html">History</a></li>
+                    <li class='highScores closebtn'><a href="highScores.html">High Scores</a></li>
+                    <li class='newgame closebtn'><a href=""></a>Exit</li>
+                </ul>
+                <a id="closeMenu" href="javascript:void(0)" class="closebtn">×</a>
+            </nav>
+        </div>
+        <div id='historyDetail' class='leftPanel'></div>
+        <div id='historySimpleView' class='rightPanel'></div>
+
+    </body>
+</html>

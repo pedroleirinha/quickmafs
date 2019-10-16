@@ -1,0 +1,77 @@
+<html lang="en">
+
+<head>
+    <meta name="viewport" content="width=device-width, initial-scale=1.0">
+    <meta charset="UTF-8">
+    <!-- CSS Styles -->
+    <script src="https://ajax.googleapis.com/ajax/libs/jquery/1.8.3/jquery.min.js"></script>
+
+    <link href="https://fonts.googleapis.com/css?family=Risque" rel="stylesheet">
+    <link href="https://fonts.googleapis.com/css?family=Joti+One" rel="stylesheet">
+    <link href="https://fonts.googleapis.com/css?family=Bungee" rel="stylesheet">
+    <link href="https://fonts.googleapis.com/css?family=Source+Sans+Pro" rel="stylesheet">
+
+    <link rel="stylesheet" href="https://cdnjs.cloudflare.com/ajax/libs/font-awesome/4.7.0/css/font-awesome.min.css">
+
+    <link rel="stylesheet" type="text/css" href="style.css">
+
+    <script src="UICode.js"></script>
+    <script src="gameCode.js"></script>
+
+</head>
+
+<body>
+
+    <div id="menu">
+        <span>&#9776;</span>
+        <nav id="sideMenu" class="sidenav">
+            <h1 class='subtitle'>QuickMath</h1>
+            <ul>
+                <li class='newgame closebtn'><a href="quickmath.html">New Game</a></li>
+                <li class='history closebtn'><a href="history.html">History</a></li>
+                <li class='highScores closebtn'><a href="highscores.html">High Scores</a></li>
+                <li class='newgame closebtn'><a href=""></a>Exit</li>
+            </ul>
+            <a id="closeMenu" href="javascript:void(0)" class="closebtn">×</a>
+        </nav>
+    </div>
+    <div id="game" class="leftPanel">
+        <div id='gametitle'>
+            <h1 class='title'></h1></div>
+        <div id='questionTile'>
+            <h1 class='questionNumber'><h1></div>
+        <div id='anwserTile'>
+            <div class='anwserNumber undefinedAnwser'> <span></span></div>
+            <div class='anwserNumber undefinedAnwser'> <span></span></div>
+            <div class='anwserNumber undefinedAnwser'> <span></span></div>
+            <div class='anwserNumber undefinedAnwser'> <span></span></div>
+        </div>
+    </div>
+    <div id="info" class="rightPanel">
+
+        <div id='topDiv'>
+            <div class='subtitle'>Time Left:</div>
+            <div><h1 id='clock'>01:00</h1></div>
+        </div>
+        <div id='bottomDiv'>
+            <div class='subtitle'>Information:</div>
+            <table align='center' id='infoTable'>
+                <tr>
+                    <td align='right'>Dificulty:</td>
+                    <td align='center'><span id='dificulty'>0</span></td>
+                </tr>
+                <tr>
+                    <td align='right'>Score:</td>
+                    <td align='center'><span id='score'>0</span></td>
+                </tr>
+                <tr>
+                    <td align='right'>Streak:</td>
+                    <td align='center'><span id='streak'>0</span></td>
+                </tr>
+            </table>
+
+        </div>
+    </div>
+</body>
+
+</html>
